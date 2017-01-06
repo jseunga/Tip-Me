@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24A706E01E1F45EF00F8D881 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A706DF1E1F45EF00F8D881 /* SettingViewController.swift */; };
 		24DB18BA1E1EEB6900053A91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DB18B91E1EEB6900053A91 /* AppDelegate.swift */; };
 		24DB18BC1E1EEB6900053A91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DB18BB1E1EEB6900053A91 /* ViewController.swift */; };
 		24DB18BF1E1EEB6900053A91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24DB18BD1E1EEB6900053A91 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		24A706DF1E1F45EF00F8D881 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		24DB18B61E1EEB6900053A91 /* Tip-Me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tip-Me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		24DB18B91E1EEB6900053A91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24DB18BB1E1EEB6900053A91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				24DB18B91E1EEB6900053A91 /* AppDelegate.swift */,
 				24DB18BB1E1EEB6900053A91 /* ViewController.swift */,
 				24DB18BD1E1EEB6900053A91 /* Main.storyboard */,
+				24A706DF1E1F45EF00F8D881 /* SettingViewController.swift */,
 				24DB18C01E1EEB6900053A91 /* Assets.xcassets */,
 				24DB18C21E1EEB6900053A91 /* LaunchScreen.storyboard */,
 				24DB18C51E1EEB6900053A91 /* Info.plist */,
@@ -261,6 +264,7 @@
 			files = (
 				24DB18BC1E1EEB6900053A91 /* ViewController.swift in Sources */,
 				24DB18BA1E1EEB6900053A91 /* AppDelegate.swift in Sources */,
+				24A706E01E1F45EF00F8D881 /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +507,7 @@
 				24DB18E01E1EEB6900053A91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		24DB18E11E1EEB6900053A91 /* Build configuration list for PBXNativeTarget "Tip-MeTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +516,7 @@
 				24DB18E31E1EEB6900053A91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		24DB18E41E1EEB6900053A91 /* Build configuration list for PBXNativeTarget "Tip-MeUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +525,7 @@
 				24DB18E61E1EEB6900053A91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
