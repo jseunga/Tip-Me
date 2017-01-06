@@ -22,6 +22,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        billField.becomeFirstResponder()
     }
 
     override func didReceiveMemoryWarning() {
@@ -66,12 +67,12 @@ class ViewController: UIViewController {
     }
 
     @IBAction func calculateTip(_ sender: AnyObject) {
-    
-        let tipPercentages = [0.15, 0.2, 0.25]
         
+        let tipPercentages = [0.15, 0.2, 0.25]
         let bill = Double(billField.text!) ?? 0
         let tip = bill * tipPercentages[tipControl.selectedSegmentIndex]
         let total = bill + tip
+        
         
         tipLabel.text = String(format: "$%.2f", tip)
         totalLabel.text = String(format: "$%.2f", total)
@@ -82,8 +83,8 @@ class ViewController: UIViewController {
         let splitTotal = total / numSplit
         splitTotalLabel.text = String(format: "$%.2f", splitTotal)
         
-        
     }
 
 }
+
 
