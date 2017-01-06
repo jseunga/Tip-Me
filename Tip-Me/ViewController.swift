@@ -38,10 +38,24 @@ class ViewController: UIViewController {
         
         let defaults = UserDefaults.standard
         let defaultTip = defaults.integer(forKey: "defaultTip")
-        
-        print("Tip view: \(defaultTip)")
-        
         tipControl.selectedSegmentIndex = defaultTip
+        
+        let changeTheme = defaults.bool(forKey: "changeTheme")
+        if(changeTheme) {
+            self.view.backgroundColor = UIColor.darkGray
+            billField.backgroundColor = UIColor.darkGray
+            billField.keyboardAppearance = UIKeyboardAppearance.dark
+            splitField.backgroundColor = UIColor.darkGray
+            splitStepper.tintColor = UIColor.darkText
+            tipControl.tintColor = UIColor.darkText
+        } else {
+            self.view.backgroundColor = UIColor.white
+            billField.backgroundColor = UIColor.white
+            billField.keyboardAppearance = UIKeyboardAppearance.light
+            splitField.backgroundColor = UIColor.white
+            splitStepper.tintColor = UIColor.init(colorLiteralRed: 14.0/255, green: 122.0/255, blue: 254.0/255, alpha: 1.0)
+            tipControl.tintColor = UIColor.init(colorLiteralRed: 14.0/255, green: 122.0/255, blue: 254.0/255, alpha: 1.0)
+        }
         
     }
     
@@ -62,9 +76,9 @@ class ViewController: UIViewController {
 
 
     
-    @IBAction func onTap(_ sender: Any) {
-        view.endEditing(true)
-    }
+//    @IBAction func onTap(_ sender: Any) {
+//        view.endEditing(true)
+//    }
 
     @IBAction func calculateTip(_ sender: AnyObject) {
         

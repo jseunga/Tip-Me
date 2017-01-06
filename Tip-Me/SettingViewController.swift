@@ -11,6 +11,7 @@ import UIKit
 class SettingViewController: UIViewController {
     
     @IBOutlet weak var defaultTipControl: UISegmentedControl!
+    @IBOutlet weak var themeSwitch: UISwitch!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +22,11 @@ class SettingViewController: UIViewController {
         super.viewWillAppear(animated)
         self.defaultTipControl.selectedSegmentIndex = UISegmentedControlNoSegment
         
+        let defaults = UserDefaults.standard
+        let themeSwitch = defaults.bool(forKey: "changeTheme")
+        if(themeSwitch) {
+            self.themeSwitch.setOn(true, animated: true)
+        }
     }
     
     @IBAction func setDefaultTip(_ sender: Any) {
@@ -29,6 +35,20 @@ class SettingViewController: UIViewController {
         defaults.synchronize()
     }
    
+    @IBAction func changeTheme(_ sender: Any) {
+        let defaults = UserDefaults.standard
+        defaults.set(themeSwitch.isOn, forKey: "changeTheme")
+        
+        if(themeSwitch.isOn) {
+            print("switch is on")
+        } else {
+            print("switch is off")
+        }
+        
+        defaults.synchronize()
+    }
+
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
