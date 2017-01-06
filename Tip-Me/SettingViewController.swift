@@ -39,11 +39,11 @@ class SettingViewController: UIViewController {
         let defaults = UserDefaults.standard
         defaults.set(themeSwitch.isOn, forKey: "changeTheme")
         
-        if(themeSwitch.isOn) {
-            print("switch is on")
-        } else {
-            print("switch is off")
-        }
+//        if(themeSwitch.isOn) {
+//            print("switch is on")
+//        } else {
+//            print("switch is off")
+//        }
         
         defaults.synchronize()
     }

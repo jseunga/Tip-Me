@@ -32,7 +32,7 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        print("view will appear")
+        //print("view will appear")
         // This is a good place to retrieve the default tip percentage from UserDefaults
         // and use it to update the tip amount
         
@@ -59,20 +59,20 @@ class ViewController: UIViewController {
         
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        print("view did appear")
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        print("view will disappear")
-    }
-    
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        print("view did disappear")
-    }
+//    override func viewDidAppear(_ animated: Bool) {
+//        super.viewDidAppear(animated)
+//        print("view did appear")
+//    }
+//    
+//    override func viewWillDisappear(_ animated: Bool) {
+//        super.viewWillDisappear(animated)
+//        print("view will disappear")
+//    }
+//    
+//    override func viewDidDisappear(_ animated: Bool) {
+//        super.viewDidAppear(animated)
+//        print("view did disappear")
+//    }
 
 
     
