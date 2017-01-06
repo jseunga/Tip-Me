@@ -9,19 +9,46 @@
 import UIKit
 
 class SettingViewController: UIViewController {
-
+    
+    @IBOutlet weak var defaultTipControl: UISegmentedControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.defaultTipControl.selectedSegmentIndex = UISegmentedControlNoSegment
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        print("Setting view did appear")
+        
+    }
+    
+    @IBAction func setDefaultTip(_ sender: Any) {
+        
+        let defaults = UserDefaults.standard
+        defaults.set(defaultTipControl.selectedSegmentIndex, forKey: "defaultTip")
+        
+        print("setting: \(defaultTipControl.selectedSegmentIndex)")
+        
+        defaults.synchronize()
+    }
+   
+
+
+   
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
+    
     /*
     // MARK: - Navigation
 

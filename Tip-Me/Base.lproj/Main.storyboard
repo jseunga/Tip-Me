@@ -125,13 +125,16 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="pqt-56-OPw">
-                                <rect key="frame" x="16" y="162" width="343" height="29"/>
+                                <rect key="frame" x="16" y="147" width="343" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="15%"/>
                                     <segment title="20%"/>
                                     <segment title="25%"/>
                                 </segments>
+                                <connections>
+                                    <action selector="setDefaultTip:" destination="94b-cV-Vp4" eventType="valueChanged" id="WuV-CS-Y9f"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -139,6 +142,9 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="HbE-wL-BiC"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="defaultTipControl" destination="pqt-56-OPw" id="ykR-tS-Dig"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="91P-Ok-5NH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
