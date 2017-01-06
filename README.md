@@ -29,13 +29,13 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='file:///Users/seunga/Documents/Tip-MeDemo.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://imgur.com/26d3b468-5cca-4051-ac2a-86ebe7a2d9fd' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+This was my first time working with Mac OS, xCode, and Swift. Learning new interfaces and a language at the same time was not easy. Understanding the documentation was also chanllenging. It did not give enough explanations or examples to grasp what each function does. Moreover, it was difficult to choose which function or method to implement some tasks. There are so many ways to do one task and a beginner like myself could not pick out the right one. Overall, it was fun and interesting to make a fully working app!
 
 ## License
 
