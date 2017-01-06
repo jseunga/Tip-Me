@@ -14,6 +14,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var billField: UITextField!
     @IBOutlet weak var tipControl: UISegmentedControl!
+    @IBOutlet weak var splitField: UITextField!
+    @IBOutlet weak var splitStepper: UIStepper!
+    @IBOutlet weak var splitTotalLabel: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,6 +59,8 @@ class ViewController: UIViewController {
         print("view did disappear")
     }
 
+
+    
     @IBAction func onTap(_ sender: Any) {
         view.endEditing(true)
     }
@@ -69,6 +75,13 @@ class ViewController: UIViewController {
         
         tipLabel.text = String(format: "$%.2f", tip)
         totalLabel.text = String(format: "$%.2f", total)
+        
+        let numSplit = splitStepper.value
+        splitField.text = "\(Int(numSplit))"
+        
+        let splitTotal = total / numSplit
+        splitTotalLabel.text = String(format: "$%.2f", splitTotal)
+        
         
     }
 
